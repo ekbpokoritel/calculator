@@ -64,6 +64,10 @@ body {
 }
 
 button {
+    touch-action: manipulation;
+-webkit-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
     aspect-ratio: 1;
 
     border: none;
