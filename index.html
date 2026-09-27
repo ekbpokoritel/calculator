@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <main class="calculator">
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101119"><meta name="description" content="Орбита — калькуляторы, конвертеры и полезные инструменты для ежедневных расчётов."><title>Орбита — все расчёты в одном месте</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="assistant.css"></head>
+<body><div class="ambient" aria-hidden="true"></div>
+<header class="header wrap"><a class="brand" href="#/"><span class="brand-mark">◈</span> орбита<span class="brand-dot">.</span></a><nav aria-label="Главная навигация"><a href="#/" id="catalog-link">Каталог</a><button id="favorites-nav">♡ Избранное <span id="fav-count">0</span></button></nav><span class="header-note">Меньше рутины. Больше ясности.</span></header>
+<main id="home" class="wrap"><section class="hero"><div class="hero-copy"><div class="eyebrow"><span></span> ИНСТРУМЕНТЫ НА КАЖДЫЙ ДЕНЬ</div><h1>Сложные вопросы.<br><em>Простые расчёты.</em></h1><p>От первого процента до большого плана.<br>Всё, что нужно посчитать — в одном месте.</p><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Что посчитаем? Например, кредит" aria-label="Поиск инструментов"><kbd>/</kbd></label><div class="hero-meta"><span>8 полезных инструментов</span><i>·</i><span>Без регистрации</span><i>·</i><span>Бесплатно</span></div></div><div class="orbit-art" aria-hidden="true"><div class="orbit-ring r1"></div><div class="orbit-ring r2"></div><div class="orbit-core">∑</div><span class="float-symbol s1">%</span><span class="float-symbol s2">÷</span><span class="float-symbol s3">+</span><span class="orbit-caption">ВСЁ СХОДИТСЯ</span></div></section>
+<section id="popular-section"><div class="section-heading"><h2>Часто под рукой</h2><span>Маленькие помощники для больших дел</span></div><div id="popular" class="popular-grid"></div></section>
+<section class="catalog-section"><div class="section-heading"><h2 id="catalog-title">Все инструменты <span class="count">8</span></h2><span id="result-count" aria-live="polite"></span></div><div id="filters" class="filters" aria-label="Категории"></div><div id="catalog" class="tool-grid"></div><p id="empty" hidden>Ничего не найдено. Попробуйте другое слово или категорию.</p></section><section id="recent-section" hidden><div class="section-heading"><h2>Вы недавно открывали</h2></div><div id="recent" class="popular-grid"></div></section><section class="bottom-note"><span>✧</span><div><h3>Больше ясности в каждом числе</h3><p>Понятные формулы. Мгновенные результаты. Никаких лишних действий.</p></div><span class="note-badge">Сделано для повседневности</span></section></main>
+<main id="tool-page" class="wrap" hidden><a class="back" href="#/">← Все инструменты</a><div class="tool-heading"><div class="eyebrow" id="tool-category"></div><h1 id="tool-title" tabindex="-1"></h1><p id="tool-description"></p></div><div id="tool-content"></div><div id="basic-host" hidden>    <div class="calculator">
 
         <div class="display">
             <div class="previous-value"></div>
@@ -42,9 +38,8 @@
             <button>=</button>
         </div>
 
-    </main>
+    </div>
 
-    <script src="script.js"></script>
-
-</body>
-</html>
+</div></main>
+<footer class="wrap"><a class="brand" href="#/">◈ орбита.</a><span>Всё необходимое, ничего лишнего.</span><span>Расчёты выполняются на вашем устройстве</span></footer>
+<script src="calculations.js"></script><script src="tool-registry.js"></script><script src="app.js"></script><script src="script.js"></script><script src="assistant-ui.js"></script></body></html>

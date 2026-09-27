@@ -1,6 +1,6 @@
 const currentDisplay = document.querySelector(".current-value");
 const previousDisplay = document.querySelector(".previous-value");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".calculator button");
 
 let currentValue = "0";
 let previousValue = "";
@@ -149,6 +149,7 @@ buttons.forEach((button) => {
 
 updateDisplay();
 document.addEventListener("keydown", (event) => {
+    if (event.defaultPrevented || event.target.closest('#assistant-panel, #assistant-launcher') || document.querySelector('#basic-host').hidden || event.target.matches('input, textarea, select') || event.ctrlKey || event.metaKey || event.altKey) return;
     const key = event.key;
 
     if (/^\d$/.test(key)) {
